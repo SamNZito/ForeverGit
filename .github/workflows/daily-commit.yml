@@ -31,4 +31,4 @@ jobs:
             echo "Add repo secret GIT_EMAIL (an address from github.com/settings/emails)"
             exit 1
           fi
-          python green.py once --push
+          python mmm___forever___pls.py once --push

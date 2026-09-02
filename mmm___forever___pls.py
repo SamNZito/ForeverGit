@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Daily GitHub contribution helper.
 
-    python green.py once              # commit today, no push
-    python green.py once --push       # commit today and push
-    python green.py backfill --days 180 --min 1 --max 3 --push
+    python mmm___forever___pls.py once              # commit today, no push
+    python mmm___forever___pls.py once --push       # commit today and push
+    python mmm___forever___pls.py backfill --days 180 --min 1 --max 3 --push
 
 Git author email MUST be an address listed at github.com/settings/emails
 or the squares will not attach to your profile.
@@ -135,7 +135,7 @@ def cmd_backfill(days: int, min_c: int, max_c: int, seed: int | None, push_remot
         print("pushed")
     else:
         print("review with: git log --pretty=fuller")
-        print("then: python green.py once --push   (or git push)")
+        print("then: python mmm___forever___pls.py once --push   (or git push)")
     return 0
 
 

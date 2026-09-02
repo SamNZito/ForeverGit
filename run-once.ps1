@@ -1,3 +1,3 @@
 # Fallback only. Prefer GitHub Actions so the PC can be off.
 Set-Location $PSScriptRoot
-python green.py once --push
+python mmm___forever___pls.py once --push

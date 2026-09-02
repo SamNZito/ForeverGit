@@ -4,8 +4,8 @@ One Python script. GitHub Actions runs it every day so the PC can be off.
 Use the same script locally only for backfill.
 
 ```text
-python green.py once --push
-python green.py backfill --days 180 --min 1 --max 3 --push
+python mmm___forever___pls.py once --push
+python mmm___forever___pls.py backfill --days 180 --min 1 --max 3 --push
 ```
 
 Author email must be listed at https://github.com/settings/emails or the
@@ -36,9 +36,9 @@ git clone https://github.com/YOUR_USER/YOUR_REPO.git
 cd YOUR_REPO
 git config user.name "YOUR_USER"
 git config user.email "YOUR_GITHUB_EMAIL"
-python green.py backfill --days 180 --min 1 --max 3
+python mmm___forever___pls.py backfill --days 180 --min 1 --max 3
 git log --pretty=fuller | more
-python green.py once --push
+python mmm___forever___pls.py once --push
 ```
 
 `--push` on backfill will send the whole batch in one go after all local
@@ -50,7 +50,7 @@ Only useful if Actions is disabled. The PC must be on at the trigger time.
 
 ```powershell
 cd C:\path\to\github-daily-green
-python green.py once --push
+python mmm___forever___pls.py once --push
 ```
 
 Task Scheduler → Create Task → Daily → Action: `python.exe` with those args.
