@@ -1,4 +1,4 @@
-name: Daily green square
+name: ForeverGit
 
 on:
   schedule:
