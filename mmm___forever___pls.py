@@ -94,7 +94,7 @@ def cmd_once(push_remote: bool) -> int:
     now = dt.datetime.now()
     line = f"{now.isoformat(timespec='seconds')} daily ping"
     append_line(line)
-    commit(f"chore: daily ping {today.isoformat()}")
+    commit(f"I think I'll commit this 4 today {today.isoformat()}")
     print(f"committed {line}")
     if push_remote:
         push()
@@ -126,7 +126,7 @@ def cmd_backfill(days: int, min_c: int, max_c: int, seed: int | None, push_remot
             )
             line = f"{when.isoformat(timespec='seconds')} backfill {i + 1}/{n}"
             append_line(line)
-            commit(f"chore: backfill {day.isoformat()} ({i + 1}/{n})", when=when)
+            commit(f"I think I'll commit this backfill 4 today. {day.isoformat()} ({i + 1}/{n})", when=when)
             print(f"committed {line}")
             made += 1
     print(f"\ncreated {made} commits")
